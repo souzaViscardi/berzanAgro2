@@ -1,0 +1,79 @@
+#simpleCard{
+    display: flex;
+    width: 31vw;
+    height: 19rem;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.258) !important;
+    justify-content: center!important;
+}
+#simpleCard > div > h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: start;
+    padding-left: 1rem;
+
+}
+#simpleCard > div > div {
+    text-align: start;
+    color: rgba(255, 255, 255, 0.258);
+    font-size: 1.2rem;
+    padding-top: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+#simpleCard > div {
+    align-content: flex-start;
+}
+
+@media (max-width: 520px) {
+    #simpleCard {
+
+        width: 95vw !important;
+        margin: auto;
+        margin-bottom: 1rem;
+        height: 10rem;
+
+      }
+      #simpleCard > div > h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        text-align: start;
+        padding-left: .5rem;
+    }
+    #simpleCard > div > div {
+        text-align: start;
+        color: rgba(255, 255, 255, 0.258);
+        font-size: .8rem;
+        padding-top: .9rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+
+    }
+  
+  }
+  @media (min-width: 600px) and (max-width: 900px) {
+    #simpleCard {
+        width: 46.5vw;
+        height: 15rem;
+        margin: auto;
+        margin-bottom: 1rem;
+      }
+    #simpleCard > div > h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: start;
+        padding-left: .5rem;
+    }
+    #simpleCard > div > div {
+        text-align: start;
+        color: rgba(255, 255, 255, 0.258);
+        font-size: 1rem;
+        padding-top: .9rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+
+    }
+  }

@@ -1,0 +1,123 @@
+#Brands{
+    overflow: hidden;
+    h2{
+        text-align: start;
+        font-size: 2rem;
+    }
+    h1{
+        margin: 0;
+    }
+    .imgContainer{
+        margin-bottom: 1rem;
+    }
+    h3{
+        text-align: start;
+    }
+    span{
+        max-width: 30rem;
+    }
+    hr{
+        color: aliceblue;
+        width: 100%;
+    }
+    .bloco >div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        font-size: 1rem !important; 
+        font-weight: 600  !important;
+        color:rgb(123, 105, 105);
+        >span{
+            color: aliceblue;
+        }
+    }
+    .bloco >h2{
+        margin: 0;
+    }
+    .bloco > span{
+        text-align: start;
+    }
+    .aboutImg{
+        width: 100vw;
+        height: 20rem;
+        object-fit: cover;
+    }
+}
+
+.border-bottom{
+    border-bottom: 1px solid rgb(123, 105, 105);;
+
+}
+
+
+.start{
+    text-align: start;
+}
+
+#fullTable>div{
+    padding-bottom: .8rem !important;
+    padding-top: .5rem !important;
+
+}
+
+@media (max-width: 520px) {
+    #Brands{
+        .container{
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+        .aboutImg{
+            object-fit: contain;
+        }
+        .imgContainer{
+            width: 20rem;
+            height: 8rem !important;
+        }
+        .bloco > span {
+            text-align: center;
+            font-size: .8rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+        }
+        .bloco >h2 {
+            text-align: center;
+        }
+        .margin-top{
+            margin-top: 2.5rem;
+        }
+        .bloco >div{
+
+            >span{
+                font-size: .5rem
+            }
+        }
+        #fullTable{
+            span {
+                max-width: 10rem;
+            }
+        }
+   
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    #Brands{
+        .aboutImg{
+            object-fit: contain;
+        }
+        .margin-top{
+            flex-direction: column;
+            .bloco{
+                width: 95vw;
+                align-items: center;
+                min-height: 7rem;            
+            }
+            .bloco > span {
+                text-align: center;
+            }
+        }
+    }
+  }

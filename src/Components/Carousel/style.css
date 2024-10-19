@@ -1,0 +1,47 @@
+#carousel{
+    display: flex;
+    gap: 10px;
+    animation-direction: alternate-reverse;    
+    animation-name: slideAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;    
+    align-self: flex-start;
+    &:hover {
+        animation-play-state: paused;
+      }
+    
+}
+
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0vw); }
+
+    100% { transform: translateX(-100vw); }
+}
+
+
+@media (max-width: 520px) {
+    #carousel{
+
+        animation-duration: 20s!important;
+    }
+    @keyframes slideAnimation {
+        
+        0% { transform: translateX(0vw); }
+
+        100% { transform: translateX(-550vw); }
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    #carousel{
+
+        animation-duration: 14s !important; 
+    }
+    @keyframes slideAnimation {
+        0% { transform: translateX(0vw); }
+
+        100% { transform: translateX(-200vw); }
+    }
+  }

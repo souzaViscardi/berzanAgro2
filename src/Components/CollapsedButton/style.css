@@ -1,0 +1,31 @@
+#CollapsedButton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    button{
+        color: white;
+        text-align: start;
+        padding: 1rem;
+        font-weight: 600;
+        border: solid rgba(255, 255, 255, 0.258) 1px;
+        background-color: rgb(10, 10, 10);
+
+    }
+    >div{
+        text-align: justify;
+        padding: 1rem;
+    }
+}
+@media (max-width: 520px) {
+    #CollapsedButton{
+        button{
+            font-size: .8rem;
+            font-weight: 400;
+
+        }
+        >div{
+            font-size: .8rem;
+        }
+    }
+  }

@@ -1,0 +1,44 @@
+
+
+#testimonialCard{
+    border: solid rgba(255, 255, 255, 0.258) 1px;
+    padding: 2rem;
+    width: 28vw;
+    height: auto;
+    min-height: 10rem;
+    span{
+        font-size: .8rem;
+        text-align: left;
+        margin-top: 10px;
+        font-weight: 1;
+        height: 8rem;
+        overflow-y: scroll;
+    }
+    h3{
+        margin-top: 1rem;
+        margin-left: 1vw;
+        text-align: start;
+    }
+    > div {
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+@media (max-width: 520px) {
+    #testimonialCard{
+        width: 80vw;
+        min-height: 18rem;
+
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    #testimonialCard{
+        width: 20rem;
+        min-height: 10rem;
+    }
+  }

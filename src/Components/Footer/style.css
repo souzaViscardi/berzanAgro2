@@ -1,0 +1,75 @@
+#Footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    hr{
+        width: 90%;
+        color: var(--cor-transparent);
+    }
+    .bloco{
+        width: 20rem!important;
+        min-width: 20vw;
+        gap: .5rem;
+        margin-top: 2rem;
+    }
+    h2{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .full-container{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    a{
+        width: auto;
+        align-self: center;
+        width: fit-content;
+        font-weight: 600;
+    }
+    span{
+        font-weight: 600;
+    }
+}
+
+.fourp-name{
+    font-size: 13vw !important
+}
+
+@media (max-width: 520px) {
+    #Footer{
+    .bloco > h2{
+        margin: 0;
+        font-size: .5rem !important;
+    }
+    a{
+        font-size: .3rem !important;
+        overflow: hidden;
+    }
+}
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #Footer{
+        .bloco > h2{
+            margin: 0;
+            font-size: .8rem !important;
+        }
+        a{
+            font-size: .6rem !important;
+            overflow: hidden;
+        }
+        .icon{  
+            width: .6rem !important;
+        }
+        span{
+            font-size: .6rem !important;  
+        }
+    }
+  }

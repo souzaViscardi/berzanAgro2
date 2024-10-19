@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+#root {
+  font-family: "Poppins" , sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+  width: 100%;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --paragraph: rgba(4, 4, 5, 0.7);
+  --font_inter_tight: "Inter Tight", sans-serif;
+  --font_instrument: "Instrument Sans", sans-serif;
+  max-width: 100vw;
+  padding: 0%;
+  min-height: 100vh;
+
+}
+.margin-top{
+  margin-top: 4rem;
+}
+ul{
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  > li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* You can also add some margins here to make it look prettier */
+  }
+  li {
+    text-align: center;
+    img{
+     filter: invert(100%); 
+     width: 1rem;
+    }
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+  }
+}
+.centralize{
+  text-align: center !important;
+  align-self: center;
+}
+#fullTable{
+  width: 95vw;
+  gap: .5rem
+}
+.medium-img{
+  width: 50rem;
+}
+:root{
+  --fourp: #ff632d;
+  --bg: #ffffff;
+  --bg2: #d8d8d8;
+  --title: #ff9100;
+  --text: #353535;
+  --fourp2: #c400ff;
+  --cor-transparent: rgba(255, 255, 255, 0.1);
+}
+html {
+  scroll-behavior: auto;
+}
+.full-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.logo{
+  width: 6rem;
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-550%, 70%); 
+  text-align: left;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+}
+a::after {
+  content: '';
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.4s ease-in-out;
+}
+
+a:hover::after {
+  
+  width: 100%;
+}
+  
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+p{
+  font-size: 16px;
+  color: var(--text);
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--title);
+  font-weight: 800;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: 1;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.dark-theme{
+  background: #ffffff;
+  color: #000;
+  border-color: #ffffff;
+}
+.button{
+  font-size: 18px;
+  color: #ffffff;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px; 
+  a{
+    z-index: 2;
+  }
+}
+.fundo {
+display: flex;  
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #ffffff;
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease;
+}
+.button:hover .fundo {
+  transform: translateY(0); 
+}
+/* 
+.button:hover {
+  color: black;
+} */
+
+.bloco > h2{
+  align-content: end;
+  margin-left: 1rem;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@media (max-width: 520px) {
+  #root {
+
+      max-width: 100vw;
+      padding: 0%;
+      font-size: .4rem;
+    }
+    li{
+      font-size: 1rem;
+    }
+    .icon{
+      width: .5rem !important;
+  }
+    .title{
+      font-size: 3rem 
+    }
+    h1{
+      font-size: 1.5rem;
+      line-height: 1.1;
+
+    }
+    h3{
+      font-size: 1rem;
+    }
+    h2{
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  .full-container{
+      display: flex;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .bloco{
+      min-height: 5rem;
+    }
+    .bloco > h2{
+      align-content: center;
+      margin-left: 0;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.1;
+    margin: auto;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1em;
+    margin: 0;
+  }
+}

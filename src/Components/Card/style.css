@@ -1,0 +1,112 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    a:hover::after {
+
+        width: 0;
+    }
+}
+h3{
+    margin: 0;
+    font-weight: 600 !important;
+}
+.icon{
+    width: 40px !important;
+    height: 40px !important;
+    box-shadow: none !important;
+    img{
+        filter: invert(100%) !important;
+    }
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 20rem;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    transform: translate(20%, 400%); 
+}
+.text-box-center {
+    transform: translate(20%, 450%) !important; 
+}
+.text-box p {
+    padding-left: 2rem;
+}
+
+
+
+.nameLabel {
+    color: aliceblue !important;
+}
+
+.typeLabel {
+    font-size: .8rem !important;
+}
+
+.img-card:hover {
+    translate: none;
+    rotate: none;
+    scale: none;
+    /* animation-name: img-anim; */
+    /* animation-duration: 2s; */
+    overflow: hidden
+}
+
+@keyframes img-anim {
+    from {
+        transform: scale(1) translateX(0);
+    }
+
+    to {
+        transform: scale(1.5)
+    }
+}
+
+@media (max-width: 520px) {
+    .card {
+
+        width: 20rem !important;
+        height: 15rem;
+        margin: auto;
+        margin-bottom: 1rem;
+
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .card {
+
+        width: 95vw;
+        height: 20rem;
+        margin: auto;
+        margin-bottom: 1rem;
+
+    }
+
+}
+
+@media(hover: hover) {
+    .img-card:hover {
+        translate: none;
+        rotate: none;
+        scale: none;
+        /* animation-name: img-anim; */
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+
+    }
+}
