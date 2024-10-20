@@ -2,9 +2,8 @@
 import  "./style.css"
 import Card from "../../Components/Card/Card"
 import {Container,Bloc} from "../../Components/Layout"
-import { Link } from "react-router-dom";
 import { ScrollRestoration } from "react-router-dom";
-
+// import Mapa from "../../Components/Mapa/Mapa";
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -24,13 +23,13 @@ export default function Home(){
             <Container classe="secondary">    
                 <div id="linhaProdutos">
                     <Card name="Pecuária" url="/Produtos/pecuaria" icon="/Home/iconPecuaria.png">
-                        <img className="aboutImg" src="/Home/pecuaria.jpg" alt="about"/>
+                        <img className="aboutImg img-card" src="/Home/pecuaria.jpg" alt="about"/>
                     </Card>
-                    <Card center={true} name="Fertilizantes" url="/Produtos/fertilizantes" icon="/Home/iconFertilizantes.png">
-                        <img className="aboutImg centerImg" src="/Home/fertilizantes.jpg" alt="about"/>
+                    <Card center={true} classe="centerImg" name="Fertilizantes" url="/Produtos/fertilizantes" icon="/Home/iconFertilizantes.png">
+                        <img className="aboutImg img-card centerImg" src="/Home/fertilizantes.jpg" alt="about"/>
                     </Card>
                     <Card name="Industria" url="/Produtos/industria" icon="/Home/iconIndustria.png">
-                    <img className="aboutImg" src="/Home/industria.jpg" alt="about"/>
+                    <img className="aboutImg img-card" src="/Home/industria.jpg" alt="about"/>
                     </Card>
                 </div>
             </Container>
@@ -85,69 +84,12 @@ export default function Home(){
                     <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
                 </Bloc>
             </Container>
-            <Container classe="imgContainer">
-                <img className="aboutImg" src="/about.png" alt="about"/>
+            {/* <Container classe="imgContainer">
+                <h1>Localização</h1>           
+            </Container> */}
+            <Container classe="full-container">
+            {/* <Mapa></Mapa> */}
             </Container>
-            <Container>
-                <h2  className="gradient-collor">BY PEOPLE, FOR PEOPLE</h2>
-            </Container>
-            <Container>
-                <h3>Fundada em 2023, a Fourp tem como objetivo transformar ideias em realidades através do design. Somos uma agência de Design, audiovisual e marketing, comprometida em transmitir a mensagem mais impactante e memorável por meio de ideias criativas e inovadoras. Nossa missão é elevar a sua marca ao próximo nível, garantindo que sua mensagem seja comunicada de forma eficaz.</h3>
-            </Container>
-            <Container>
-                <Bloc>
-                    <h1 className="left"> NOSSOS<br/> SERVIÇOS</h1>
-                </Bloc>
-                <Bloc>
-                    
-                </Bloc>
-            </Container>
-
-            <Container>
-                <Bloc>
-                    <h1 className="left">NOSSA<br/> INSPIRAÇÃO</h1>
-                </Bloc>
-                <Bloc>
-                    <h3 className="description">Nossa inspiração vem da profunda conexão que criamos com nossos clientes e suas histórias únicas. Nossa missão é representar essas histórias de maneira autêntica, solucionando problemas com criatividade e entregando resultados excepcionais. Não nos contentamos com o comum; ao invés disso, buscamos transformar os conceitos visuais de nossos clientes em algo memorável e impactante, refletindo a essência de suas marcas de forma inovadora e personalizada.
-                        <br></br>
-                        <br></br>
-                        Nossa visão é ser uma referência no mercado, lembrada por nosso compromisso em criar relacionamentos genuínos e duradouros. Na Fourp, valorizamos o trabalho ético, a responsabilidade social e o profissionalismo, e nos orgulhamos de ser uma empresa onde as pessoas se sentem acolhidas e valorizadas. Ao focar no cliente, cultivamos a coragem e a criatividade necessárias para oferecer soluções transparentes e eficazes. Com essa dedicação, não apenas cumprimos as demandas, mas também construímos vínculos de confiança que fortalecem a relação entre a empresa e seus clientes.
-                    </h3>
-                    <br></br>
-                    <br></br>
-                    <img className="logo" src="./signature.png"></img>
-                </Bloc>
-                
-            </Container>
-            <Container>
-                <h1>FEEDBACKS DOS<br/>NOSSOS CLIENTES</h1>
-            </Container>
-
-            <Container>
-                    <h1 >PERGUNTAS<br/>FREQUENTES</h1>
-
-            </Container>
-
-            <Container>
-            <h1 >VAMOS TRABALHAR<br/>JUNTOS?</h1>
-            </Container>
-            <Container>
-                <a className="button dark-theme" href="/contato">ENVIAR MENSSAGEM</a>
-            </Container>
-            <Container classe="imgContainer">
-                <img className="aboutImg" src="/about-4.jpg" alt="about"/>
-            </Container>
-            <Container classe="imgContainer">
-                <h2>NOS ACOMPANHE EM NOSSAS REDES SOCIAIS.</h2>
-            </Container>
-            <Container>
-                <ul>
-                    <li><Link target="_blank"  to="https://www.instagram.com/studiofourp/">INSTAGRAM</Link><img className="icon" src="/instagram.png" /></li>
-                    <li><Link target="_blank"  to="https://www.tiktok.com/@studio.fourp">TIKTOK</Link><img src="/tiktok.png" /></li>
-                    <li><Link target="_blank"  to="https://www.linkedin.com/company/studiofourp">LINKEDIN</Link><img src="/linkedin.png" /></li>
-                </ul>
-            </Container>
-            
         </div>
     )
 }

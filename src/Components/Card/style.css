@@ -3,7 +3,11 @@
     flex-direction: column;
     font-weight: 600;
     margin-bottom: 1rem;
-
+    width: 22rem;
+    height: 22rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     a:hover::after {
 
         width: 0;
@@ -36,6 +40,7 @@ h3{
     justify-content: flex-start;
     align-items: center;
     position: absolute;
+    z-index: 3;
     transform: translate(20%, 400%); 
 }
 .text-box-center {
@@ -59,8 +64,8 @@ h3{
     translate: none;
     rotate: none;
     scale: none;
-    /* animation-name: img-anim; */
-    /* animation-duration: 2s; */
+    animation-name: img-anim;
+    animation-duration: 2s;
     overflow: hidden
 }
 
@@ -103,7 +108,7 @@ h3{
         translate: none;
         rotate: none;
         scale: none;
-        /* animation-name: img-anim; */
+        animation-name: img-anim;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         overflow: hidden;

@@ -10,7 +10,7 @@ interface CardProps {
 }
 export default function Card({name, url, icon, classe="", children, center}:CardProps){
     return(
-        <div className="card">
+        <div className={classe+" card"}>
             <Link to={url}>
                 <div className={"text-box" + (center?" text-box-center":"")}>
                     <img className={classe+" icon"} src={icon} alt={name}/>
