@@ -28,8 +28,11 @@ export interface Portfolio{
 }
 export interface trabalhosInterface {
     name: string;
-    type: string;
-    imgCard: string;
-    url: string;
-}[]
+    type?: string;
+    imgCard?: string;
+    url?: string;
+    description?: string;
+    id?: number;
+    path?: string;
+}
 

@@ -1,39 +1,192 @@
 
-export const trabalhos=[
+export const pecuaria=[
     {
-        name: "REGENVET SYSTEM",
-        type: "IDENTIDADE VISUAL",
-        imgCard: "/work-regenvet.png",
-        path:"marcas/regenvet",
-        id:"regenvet",
-        date: "2024"
+        name: "Cloreto de Potássio 50%",
+        id:1,
+        imgCard: "/work.png",
+        path:"pecuaria/1",
+        description:"O cloreto de potássio (KCl) é um sal mineral amplamente utilizado na pecuária como suplemento nutricional. Na prática, ele fornece potássio, um mineral essencial para os animais."
     },
     {
-        name: "DRA. IZABELLA BATISTA",
-        type: "ENSAIO FOTOGRAFICO",
-        imgCard: "/work-2.png",
-        path:"fotos/izabelabatista",
-        id:"izabelabatista",
-        date: "2024"
-
+        name: "Óxido de Zinco 72%",
+        imgCard: "/work.png",
+        id:2,
+        path:"pecuaria/2",
+        description:"O óxido de zinco (ZnO) é um composto inorgânico que ocorre na forma de um pó branco e é amplamente utilizado em várias indústrias, incluindo a pecuária. Auxiliando na suplementação animal, saúde da pele, sistema imunológico e digestão."
 
     },
     {
-        name: "FERNANDO BELOTTO",
-        type: "IDENTIDADE VISUAL",
-        imgCard: "/work-3.png",
-        path:"marcas/belotto",
-        id:"belotto",
-        date: "2024"
+        name: "Selenito de sódio 45%",
+        id:3,
+        imgCard: "/work.png",
+        path:"pecuaria/3",
+        description:"O selenito de sódio é uma forma de selênio que é utilizada na pecuária como suplemento nutricional. O selênio é um mineral essencial que desempenha diversas funções importantes para a saúde dos animais como por exemplo função oxidante, auxilia na saúde imunológica e reprodução."
 
     },
     {
-        name: "FERNANDO BELOTTO",
-        type: "EDIÇÃO DE VÍDEO",
-        imgCard: "/work-4.png",
-        path:"videos/belottovideos",
-        id:"belottovideos",
-        date: "2024"
+        name: "Sulfato de Cobre Mono (CuSO₄·H₂O)",
+        id:4,
+        imgCard: "/work.png",
+        path:"pecuaria/4",
+        description:"É um composto inorgânico utilizado na pecuária por suas propriedades como suplemento mineral e aditivo nutricional, além de ter benefícios na prevenção de deficiências e melhoria na qualidade do leite"
+    },
+    {
+        name: "Sulfato de Cobre Penta (CuSO₄·5H₂O)",
+        id:5,
+        imgCard: "/work.png",
+        path:"pecuaria/5",
+        description:"É uma forma hidratada de sulfato de cobre que é utilizada na pecuária principalmente como suplemento mineral, além de ter um papel importante na formação da hemoglobina e na prevenção de doenças."
+
+    },
+    {
+        name: "Sulfato de Zinco Penta (ZnSO₄·5H₂O)",
+        imgCard: "/work.png",
+        id:6,
+        path:"pecuaria/6",
+        description:"É uma forma hidratada de sulfato de zinco que é utilizada na pecuária como suplemento mineral para garantir uma ingestão adequada de zinco."
+
+    },
+    {
+        name: "Sulfato Ferroso Mono (FeSO₄·H₂O)",
+        imgCard: "/work.png",
+        id:7,
+        path:"pecuaria/7",
+        description:"É um suplemento mineral utilizado na pecuária principalmente para fornecer ferro, um elemento essencial para a saúde dos animais, prevenindo a anemia, crescimento saudável de bezerros e cordeiros e principalmente melhora a performance no ganho de peso e produção de leite."
+
+    },
+    {
+        name: "Sulfato de Manganês 26% (MnSO₄)",
+        imgCard: "/work.png",
+        id:8,
+        path:"pecuaria/8",
+        description:"É um mineral utilizado na pecuária como suplemento nutricional, fornecendo manganês, um elemento essencial para várias funções biológicas nos animais como por exemplo a formação saudável de ossos, contribui na fertilidade além de ser um excelente oxidante"
+
+    },
+    {
+        name: "Cloreto de Colina",
+        imgCard: "/work.png",
+        id:9,
+        path:"pecuaria/9",
+        description:"É um suplemento utilizado na pecuária devido às suas funções essenciais para a saúde e o desempenho dos animais. Nutriente essencial que atua como um precursor da acetilcolina, um neurotransmissor importante para várias funções corporais e proteção Hepática: A colina é crucial para o transporte de lipídios e a prevenção do acúmulo de gordura no fígado, ajudando a prevenir doenças hepáticas."
+
+    },
+    {
+        name: "Lisina",
+        imgCard: "/work.png",
+        id:10,
+        path:"pecuaria/10",
+        description:"É um aminoácido essencial fundamental na nutrição animal, especialmente na pecuária. A lisina é essencial para a síntese de proteínas, desempenhando um papel crítico no crescimento e no desenvolvimento de animais jovens, como bezerros, leitões e pintinhos."
+
+    },
+    {
+        name: "Ureia",
+        imgCard: "/work.png",
+        id:11,
+        path:"pecuaria/11",
+        description:"É um suplemento nitrogenado amplamente utilizado na pecuária, especialmente na alimentação de ruminantes. A ureia fornece nitrogênio que pode ser utilizado pelos microrganismos do rúmen para sintetizar proteínas, ajudando a melhorar a qualidade da dieta."
+
+    }
+]
+export const Industrial =[
+    {
+        name: "Cloreto de Potássio Pó Branco",
+        id:1,
+        imgCard: "/work.png",
+        path:"industrial/1",
+
+    },
+    {
+        name: "Cloreto de Potássio Granulado Vermelho",
+        id:2,
+        imgCard: "/work.png",
+        path:"industrial/2",
+
+    },
+    {
+        name: "Ureia Técnica",
+        id:3,
+        imgCard: "/work.png",
+        path:"industrial/3",
+
+    }
+]
+export const fertilizantes =[
+    {
+        name: "Cloreto de Potássio Pó Branco",
+        id:1,
+        imgCard: "/work.png",
+        path:"fertilizantes/1",
+
+    },
+    {
+        name: "Cloreto de Potássio Granulado",
+        id:2,
+        imgCard: "/work.png",
+        path:"fertilizantes/2",
+
+    },
+    {
+        name: "Ureia Agrícola",
+        id:3,
+        imgCard: "/work.png",
+        path:"fertilizantes/3",
+
+    },
+    {
+        name: "MAP",
+        id:4,
+        imgCard: "/work.png",
+        path:"fertilizantes/4",
+
+    },
+    {
+        name: "MKP",
+        id:5,
+        imgCard: "/work.png",
+        path:"fertilizantes/5",
+
+    },
+    {
+        name: "Sulfato de Potássio",
+        id:6,
+        imgCard: "/work.png",
+        path:"fertilizantes/6",
+
+    },
+    {
+        name: "Sulfato de Amônio",
+        id:7,
+        imgCard: "/work.png",
+        path:"fertilizantes/7",
+
+    },
+    {
+        name: "Ácido Bórico",
+        id:8,
+        imgCard: "/work.png",
+        path:"fertilizantes/8",
+
+    },
+    {
+        name: "Borax",
+        id:9,
+        imgCard: "/work.png",
+        path:"fertilizantes/9",
+
+    },
+
+    {
+        name: "Sulfato de Magnésio",
+        id:10,
+        imgCard: "/work.png",
+        path:"fertilizantes/10",
+
+    },
+    {
+        name: "Sulfato de Molibdenio",
+        id:11,
+        imgCard: "/work.png",
+        path:"fertilizantes/11",
 
     },
 ]
@@ -235,32 +388,5 @@ export const pages = [
         imgs:["/work-foto-iza-1.png","/work-foto-iza-2.jpg","/work-foto-iza-3.png","/work-foto-iza-4.png"],
         conceito:"As fotos foram cuidadosamente planejadas para transmitir não apenas a competência, mas também a sua abordagem acolhedora e empática com os pacientes. Cada imagem captura a essência de sua prática, evidenciando a tranquilidade e a leveza que são características essenciais do seu atendimento.",
         idealizacao: "Através dessas imagens, buscamos refletir a confiança e a segurança que a Dra. transmite em suas consultas, proporcionando uma visão clara do ambiente sereno e positivo que ela cria para seus pacientes. Este ensaio fotográfico não apenas representa o início de uma jornada promissora, mas também estabelece um novo padrão de qualidade e humanidade no atendimento nutricional.",
-    },
-]
-
-export const portfolio = [
-    {
-        id:"social",
-        titulo: "SOCIAL MEDIA",
-        subtitulo: "INSTAGRAM",
-        imgs:["/portfolio-post-1.png","/portfolio-post-2.png","/portfolio-post-3.png","/portfolio-post-4.png","/portfolio-post-5.png","/portfolio-post-6.png","/portfolio-post-7.png","/portfolio-post-8.png","/portfolio-post-9.png","/portfolio-post-10.png"],
-    },
-    {
-        id:"videos",
-        titulo: "EDIÇÃO DE VÍDEO",
-        subtitulo: "YOUTUBE E INSTAGRAM",
-        imgs:["iMlggP3eoJw","CxsxH2ReNZY", "WwynySzhWGM", "-hGV75AOanA", "jbB8n7p1yBA", "a_GG3iKYtsk"],
-    },
-    {
-        id:"thumbs",
-        titulo: "THUMBNAILS",
-        subtitulo: "YOU TUBE",
-        imgs:["/portfolio-thumb-1.jpg","/portfolio-thumb-2.jpg","/portfolio-thumb-3.jpg","/portfolio-thumb-4.jpg","/portfolio-thumb-5.jpg","/portfolio-thumb-6.jpg","/portfolio-thumb-7.jpg","/portfolio-thumb-8.jpg"],
-    },
-    {
-        id:"fotografias",
-        titulo: "ENSAIOS FOTOGRÁFICOS",
-        subtitulo: "",
-        imgs:["/photography-1.jpg","/photography-2.jpg","/photography-7.jpg","/photography-4.jpg","/photography-6.jpg","/photography-5.jpg","/photography-3.jpg"],
     },
 ]

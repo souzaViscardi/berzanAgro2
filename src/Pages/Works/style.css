@@ -1,3 +1,39 @@
-#works{
-      margin-top: 3rem;
+#Produtos{
+      margin-top: 5rem;
+      .card-product{
+            background-color: var(--title);
+            align-self: center;
+            width: 23rem;
+            height: 20rem;
+      }
+      .bloco{
+            width: 23rem;
+            min-width: 2rem !important;
+      }
+      h3{
+            color: var(--title);
+            margin-top: 10px;
+      }
+      span{
+            color: black;
+            display: flex;
+            text-align: start;
+      }
+      #filter{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+      }
+      li a {
+            display: inline-block;
+            color: var(--title) !important;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+          }
+      #mosaic{
+            gap:2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+      }
 }

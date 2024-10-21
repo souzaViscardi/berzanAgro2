@@ -19,21 +19,21 @@ export default function Footer() {
 
                     <div className="box">
                       <Container>
-                          <img src="/Home/iconFertilizantes.png" alt="logo"/>
+                          <img src="/wpp.png" alt="logo"/>
                             <div className="info-box">
                               <h2>WhatsApp</h2>
                               <a>+55 11 9988-7766</a>
                             </div>
                       </Container>
                       <Container>
-                          <img src="/Home/iconFertilizantes.png" alt="logo"/>
+                          <img src="/email.png" alt="logo"/>
                           <div className="info-box">
                               <h2>Email</h2>
                               <a>lorem@gmail.com</a>
                             </div>
                       </Container>
                       <Container>
-                          <img src="/Home/iconFertilizantes.png" alt="logo"/>
+                          <img src="/linkedin.png" alt="logo"/>
                           <div className="info-box">
                               <h2>Linkedin</h2>
                               <a>Berzan Agro</a>
