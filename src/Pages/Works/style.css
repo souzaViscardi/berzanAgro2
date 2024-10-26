@@ -6,18 +6,56 @@
             width: 23rem;
             height: 20rem;
       }
+      .icon-box{
+            display: flex;
+            background-color: var(--title);
+            width: auto;
+            width: 50px;
+            height: 50px;
+            align-self: start;
+            align-items: center;
+            justify-content: center;
+      }
+      img{
+            width: 35px;
+            height: 35px;
+
+      }
+      .item-list{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+            text-align: center;
+            border: 1px solid  rgba(0, 0, 0, 0.111);    
+            width: 43.2rem;
+ 
+      }
+      .product-list{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+      }
+      a::after {
+            content: '';
+            display: flex;
+            width: 0;
+            height: 2px;
+            background-color: var(--title);
+            transition: width 0.4s ease-in-out;
+          }
       .bloco{
-            width: 23rem;
+            width: auto;
             min-width: 2rem !important;
+            gap: 0 !important;
+            min-height: 0 !important;
       }
       h3{
             color: var(--title);
-            margin-top: 10px;
-      }
-      span{
-            color: black;
             display: flex;
-            text-align: start;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
       }
       #filter{
             display: flex;

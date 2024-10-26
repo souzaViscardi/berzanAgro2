@@ -3,13 +3,13 @@ export const pecuaria=[
     {
         name: "Cloreto de Potássio 50%",
         id:1,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         path:"pecuaria/1",
         description:"O cloreto de potássio (KCl) é um sal mineral amplamente utilizado na pecuária como suplemento nutricional. Na prática, ele fornece potássio, um mineral essencial para os animais."
     },
     {
         name: "Óxido de Zinco 72%",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:2,
         path:"pecuaria/2",
         description:"O óxido de zinco (ZnO) é um composto inorgânico que ocorre na forma de um pó branco e é amplamente utilizado em várias indústrias, incluindo a pecuária. Auxiliando na suplementação animal, saúde da pele, sistema imunológico e digestão."
@@ -18,7 +18,7 @@ export const pecuaria=[
     {
         name: "Selenito de sódio 45%",
         id:3,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         path:"pecuaria/3",
         description:"O selenito de sódio é uma forma de selênio que é utilizada na pecuária como suplemento nutricional. O selênio é um mineral essencial que desempenha diversas funções importantes para a saúde dos animais como por exemplo função oxidante, auxilia na saúde imunológica e reprodução."
 
@@ -26,21 +26,21 @@ export const pecuaria=[
     {
         name: "Sulfato de Cobre Mono (CuSO₄·H₂O)",
         id:4,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         path:"pecuaria/4",
         description:"É um composto inorgânico utilizado na pecuária por suas propriedades como suplemento mineral e aditivo nutricional, além de ter benefícios na prevenção de deficiências e melhoria na qualidade do leite"
     },
     {
         name: "Sulfato de Cobre Penta (CuSO₄·5H₂O)",
         id:5,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         path:"pecuaria/5",
         description:"É uma forma hidratada de sulfato de cobre que é utilizada na pecuária principalmente como suplemento mineral, além de ter um papel importante na formação da hemoglobina e na prevenção de doenças."
 
     },
     {
         name: "Sulfato de Zinco Penta (ZnSO₄·5H₂O)",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:6,
         path:"pecuaria/6",
         description:"É uma forma hidratada de sulfato de zinco que é utilizada na pecuária como suplemento mineral para garantir uma ingestão adequada de zinco."
@@ -48,7 +48,7 @@ export const pecuaria=[
     },
     {
         name: "Sulfato Ferroso Mono (FeSO₄·H₂O)",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:7,
         path:"pecuaria/7",
         description:"É um suplemento mineral utilizado na pecuária principalmente para fornecer ferro, um elemento essencial para a saúde dos animais, prevenindo a anemia, crescimento saudável de bezerros e cordeiros e principalmente melhora a performance no ganho de peso e produção de leite."
@@ -56,7 +56,7 @@ export const pecuaria=[
     },
     {
         name: "Sulfato de Manganês 26% (MnSO₄)",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:8,
         path:"pecuaria/8",
         description:"É um mineral utilizado na pecuária como suplemento nutricional, fornecendo manganês, um elemento essencial para várias funções biológicas nos animais como por exemplo a formação saudável de ossos, contribui na fertilidade além de ser um excelente oxidante"
@@ -64,7 +64,7 @@ export const pecuaria=[
     },
     {
         name: "Cloreto de Colina",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:9,
         path:"pecuaria/9",
         description:"É um suplemento utilizado na pecuária devido às suas funções essenciais para a saúde e o desempenho dos animais. Nutriente essencial que atua como um precursor da acetilcolina, um neurotransmissor importante para várias funções corporais e proteção Hepática: A colina é crucial para o transporte de lipídios e a prevenção do acúmulo de gordura no fígado, ajudando a prevenir doenças hepáticas."
@@ -72,7 +72,7 @@ export const pecuaria=[
     },
     {
         name: "Lisina",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:10,
         path:"pecuaria/10",
         description:"É um aminoácido essencial fundamental na nutrição animal, especialmente na pecuária. A lisina é essencial para a síntese de proteínas, desempenhando um papel crítico no crescimento e no desenvolvimento de animais jovens, como bezerros, leitões e pintinhos."
@@ -80,7 +80,7 @@ export const pecuaria=[
     },
     {
         name: "Ureia",
-        imgCard: "/work.png",
+        imgCard: "/Home/iconPecuaria.png",
         id:11,
         path:"pecuaria/11",
         description:"É um suplemento nitrogenado amplamente utilizado na pecuária, especialmente na alimentação de ruminantes. A ureia fornece nitrogênio que pode ser utilizado pelos microrganismos do rúmen para sintetizar proteínas, ajudando a melhorar a qualidade da dieta."
@@ -91,21 +91,21 @@ export const Industrial =[
     {
         name: "Cloreto de Potássio Pó Branco",
         id:1,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconIndustria.png",
         path:"industrial/1",
 
     },
     {
         name: "Cloreto de Potássio Granulado Vermelho",
         id:2,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconIndustria.png",
         path:"industrial/2",
 
     },
     {
         name: "Ureia Técnica",
         id:3,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconIndustria.png",
         path:"industrial/3",
 
     }
@@ -114,63 +114,63 @@ export const fertilizantes =[
     {
         name: "Cloreto de Potássio Pó Branco",
         id:1,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/1",
 
     },
     {
         name: "Cloreto de Potássio Granulado",
         id:2,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/2",
 
     },
     {
         name: "Ureia Agrícola",
         id:3,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/3",
 
     },
     {
         name: "MAP",
         id:4,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/4",
 
     },
     {
         name: "MKP",
         id:5,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/5",
 
     },
     {
         name: "Sulfato de Potássio",
         id:6,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/6",
 
     },
     {
         name: "Sulfato de Amônio",
         id:7,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/7",
 
     },
     {
         name: "Ácido Bórico",
         id:8,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/8",
 
     },
     {
         name: "Borax",
         id:9,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/9",
 
     },
@@ -178,14 +178,14 @@ export const fertilizantes =[
     {
         name: "Sulfato de Magnésio",
         id:10,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/10",
 
     },
     {
         name: "Sulfato de Molibdenio",
         id:11,
-        imgCard: "/work.png",
+        imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/11",
 
     },

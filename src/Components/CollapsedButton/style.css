@@ -1,9 +1,10 @@
-#CollapsedButton{
+#CollapsedButton {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 45vw;
     text-align: justify;
-    button{
+
+    button {
         color: white;
         text-align: start;
         padding: 1rem;
@@ -12,20 +13,63 @@
         background-color: rgb(10, 10, 10);
 
     }
-    >div{
-        text-align: justify;
-        padding: 1rem;
+
+    .description {
+        display: flex;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.111);
+        border-top: none;
+        height: 0px;
+        overflow: hidden;
     }
+
+    span {
+        color: var(--text);
+        display: flex;
+        text-align: start;
+        width: 36.5vw;
+        border-left: 1px solid rgba(0, 0, 0, 0.111);
+    }
+
+    .show {
+        animation: expand 0.3s ease-in-out forwards;
+
+    }
+     .colapse {
+        animation: collapse 0.3s ease-in-out forwards;
+      }
+
+      
 }
+
 @media (max-width: 520px) {
-    #CollapsedButton{
-        button{
+    #CollapsedButton {
+        button {
             font-size: .8rem;
             font-weight: 400;
 
         }
-        >div{
+
+        >div {
             font-size: .8rem;
         }
+    }
+}
+
+@keyframes expand {
+    from {
+      height: 0px;
+    }
+    to {
+      height: var(--content-height);
+    }
+  }
+
+  @keyframes collapse {
+    from {
+      height: var(--content-height); 
+    }
+    to {
+      height: 0px;
     }
   }

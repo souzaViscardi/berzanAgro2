@@ -1,23 +1,34 @@
 
 import  "./style.css"
-import Card from "../../Components/Card/Card"
 import {pecuaria, Industrial, fertilizantes} from "../../data/index"
-import {Mosaic,Bloc} from "../../Components/Layout"
-import { useState } from "react"
-import { Link, ScrollRestoration } from "react-router-dom";
-
+import { useEffect, useState } from "react"
+import { useSearchParams } from 'react-router-dom';
+import { ScrollRestoration } from "react-router-dom";
+import CollapsedButton from "../../Components/CollapsedButton/CollapsedButton"
+import NavBar from "../../Components/NavBar/NavBar";
 export default function Works (){
     const [selected, setSelected] = useState(pecuaria);
-    function handleFilter(filter:string){
+    const [searchParams] = useSearchParams();
+
+    const paramValue = searchParams.get('idProduct');
+    const [isFilter, setIsFilter] = useState(paramValue || false);
+
+    useEffect(() => handleFilter(paramValue), [paramValue]);
+    function handleFilter(filter:string|null){
+        setIsFilter(!isFilter);
         if(filter === "pecuaria"){
             setSelected(pecuaria);
         }else if(filter === "industrial"){
-            setSelected(Industrial);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            setSelected(Industrial as any);
         }else if(filter === "fertilizantes"){
-            setSelected(fertilizantes);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            setSelected(fertilizantes as any);
         }
     }
     return(
+        <>
+        <NavBar></NavBar>
         <div id="Produtos" className="full-container">
             <ScrollRestoration />
             <br></br>
@@ -29,20 +40,16 @@ export default function Works (){
                 <li><a onClick={() => handleFilter("industrial")}>Industrial</a></li>
                 <li><a onClick={() => handleFilter("fertilizantes")}>Fertilizantes</a></li>
             </ul>
-            <Mosaic>
+            <div className="product-list">
                 {selected.map((el, index:number) => (
-                    <Bloc key={index}>
-                        <Link to={`/produtos/${el.path}`}>
-                        <div className="card-product"> 
+                    <CollapsedButton name={el.name} imgCard={el.imgCard} description={el.description} key={index} isFilter={isFilter}/> 
+                    ))}
+                </div>
+                <br></br>
+                <br></br>
 
-                        </div>
-                        </Link>
-                        <h3>{el.name}</h3>
-                        <span>{el.description}</span>
-                    </Bloc>
-                ))}
-            </Mosaic>
         </div>
+        </>
     )
 }
 

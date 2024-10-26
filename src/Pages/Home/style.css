@@ -88,6 +88,9 @@ h1.title {
 #home span{
     color: rgba(255, 255, 255, 0.7);
 }
+.contactimg{
+    padding: 1rem;
+}
 #slogan{
     margin-top: 5rem;
 }

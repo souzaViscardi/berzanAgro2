@@ -1,7 +1,5 @@
 import  "./style.css"     
-
 import {Container,Bloc} from "../../Components/Layout"
-import { ScrollRestoration } from "react-router-dom";
 import { useState } from "react";
 
 const validarEmail = (email:string) => {
@@ -9,23 +7,25 @@ const validarEmail = (email:string) => {
     return regex.test(email);
 };
 export default function Contact() {
-    let [result, setResult] = useState("");
-    let [error, setError] = useState(false);
+    const [result, setResult] = useState("");
+    const [error, setError] = useState(false);
     console.log(error)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleChangeEmail = (e:any) => {
-        let valid = validarEmail(e.target.value)
+        const valid = validarEmail(e.currentTarget.value)
         setError(!valid)
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         valid ? setResult("") : setResult("E-mail inválido")
     }
-    const handleSubmit = (event:any) => {
+    const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        let form = event.target;
+        const form = event.currentTarget;
         console.log('Valor do input:');
         const formData = new FormData(form);
         const object = Object.fromEntries(formData);
         console.log(object)
         let valid = true
-        Object.keys(object).forEach((key:any) => {
+        Object.keys(object).forEach((key) => {
             if(object[key]=="")
                 valid = false
         })
@@ -47,7 +47,7 @@ export default function Contact() {
         })
             .then(async (response) => {
                 console.log(response)
-                let json = await response.json();
+                const json = await response.json();
                     setResult(json.message);
             })
             .catch((error) => {
@@ -64,27 +64,26 @@ export default function Contact() {
             });
     };
   return (
-        <div className="full-container" id="Contact">
-            <ScrollRestoration />
-            <Container classe="container margin-top">
+        <div id="Contact">
                 <Bloc>
-                    <h1>Olá</h1>
-                    <span>Estamos ansiosos pela sua mensagem! envie agora mesmo e retornaremos o contato.</span>
-                        <form id="ajax-form" onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="99b62a62-32c4-4582-8894-d3b74cf77604"/>
-                                <input  type="text" name="name" id="name" placeholder="Nome"/>
-                                <input onChange={handleChangeEmail} type="email" name="email" id="email" placeholder="E-mail"/>
-                                <textarea name="message" id="message" placeholder="Mensagem"></textarea>
-                                <button disabled={error} className="theme-btn2">ENVIAR</button>
-                            {<p className={error?"invalid":""} id="result">{result}</p>}
+                        <form id="ajax-form" onSubmit={(event:React.FormEvent<HTMLFormElement>)=>handleSubmit(event)} action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="c9b62a49-0107-42ac-9110-976cc4fe8656"/>
+                            <Container >
+                                <Bloc className="right">
+                                    <input  type="text" name="name" id="name" placeholder="Nome"/>
+                                    <input onChange={handleChangeEmail} type="email" name="email" id="email" placeholder="E-mail"/>
+                                </Bloc>
+                                <Bloc className="left">
+                                    <input  type="text" name="empresa" id="empresa" placeholder="Empresa"/>
+                                    <input onChange={handleChangeEmail} type="telefone" name="telefone" id="telefone" placeholder="telefone"/>
+                                </Bloc>
+                            </Container>
                             
+                            <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                                <button disabled={error} className="theme-btn2">ENVIAR</button>
+                                {<p className={error?"invalid":""} id="result">{result}</p>}
                         </form>
                 </Bloc>
-                <Bloc>
-                    <img src="./contact.jpg" alt="contact"/>
-                </Bloc>
-            </Container>
         </div>
-        
   );
 }   

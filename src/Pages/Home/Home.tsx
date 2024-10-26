@@ -3,9 +3,17 @@ import  "./style.css"
 import Card from "../../Components/Card/Card"
 import {Container,Bloc} from "../../Components/Layout"
 import { ScrollRestoration } from "react-router-dom";
-// import Mapa from "../../Components/Mapa/Mapa";
+import Mapa from "../../Components/Mapa/Mapa";
+import Contact from "../Contact/Contact";
+import NavBar from "../../Components/NavBar/NavBar";
+import { useRef } from "react";
 export default function Home(){
+    const contactRef = useRef<HTMLDivElement | null>(null);
+    const aboutRef = useRef<HTMLDivElement | null>(null);
+    
     return(
+        <>
+        <NavBar contactRef={contactRef} aboutRef={aboutRef}></NavBar>
         <div id="home" className="full-container">
             <ScrollRestoration />
             <Container classe="imgContainer">
@@ -15,20 +23,20 @@ export default function Home(){
                 <span>Potencialize sua Produção com Produtos de Qualidade</span>
             </div>
 
-                <video autoPlay className="aboutImg" src={"Home/video_home.mp4"} loop={true} muted={true}></video>            
+                <video autoPlay className="aboutImg" src={"Home/video_home.mp4"}  loop={true} muted={true}></video>            
             </Container>
             <Container classe="secondary">
                     <h1 className="left"> Nossas Linhas de Produtos</h1>
             </Container>
             <Container classe="secondary">    
                 <div id="linhaProdutos">
-                    <Card name="Pecuária" url="/Produtos/pecuaria" icon="/Home/iconPecuaria.png">
+                    <Card name="Pecuária" url="/produtos?idProduct=pecuaria" icon="/Home/iconPecuaria.png">
                         <img className="aboutImg img-card" src="/Home/pecuaria.jpg" alt="about"/>
                     </Card>
-                    <Card center={true} classe="centerImg" name="Fertilizantes" url="/Produtos/fertilizantes" icon="/Home/iconFertilizantes.png">
+                    <Card center={true} classe="centerImg" name="Fertilizantes" url="/produtos?idProduct=fertilizantes" icon="/Home/iconFertilizantes.png">
                         <img className="aboutImg img-card centerImg" src="/Home/fertilizantes.jpg" alt="about"/>
                     </Card>
-                    <Card name="Industria" url="/Produtos/industria" icon="/Home/iconIndustria.png">
+                    <Card name="Industria" url="/produtos?idProduct=industrial" icon="/Home/iconIndustria.png">
                     <img className="aboutImg img-card" src="/Home/industria.jpg" alt="about"/>
                     </Card>
                 </div>
@@ -40,7 +48,7 @@ export default function Home(){
                 </h1>
                 <br/>
             </Container>
-            <Container>
+            <Container scrollref={aboutRef}>
                 <Bloc>
                     <img src="/Home/Foto_Sobre_1.jpg" alt="about"/>
                 </Bloc>
@@ -84,13 +92,26 @@ export default function Home(){
                     <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
                 </Bloc>
             </Container>
-            {/* <Container classe="imgContainer">
+            <Container classe="imgContainer">
                 <h1>Localização</h1>           
-            </Container> */}
-            <Container classe="full-container">
-            {/* <Mapa></Mapa> */}
             </Container>
+            <Container classe="full-container">
+            <Mapa></Mapa>
+            </Container>
+            <br></br>
+            <br></br>
+            <Container classe="full-container" scrollref={contactRef}>
+                <h1>Entre em contato conosco</h1>
+            </Container>
+            <Container classe="full-container">
+                <Bloc>
+                    <img className="contactimg" src="/Home/foto_Contato.jpg" alt="about"/>
+                </Bloc>
+                <Contact></Contact>
+            </Container>
+
         </div>
+        </>
     )
 }
 

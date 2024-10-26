@@ -1,19 +1,31 @@
 #Contact{
     background-color: var(--color-primary);
     color: var(--color-white);
-    img{
-        width: 100%;
-        height: auto;
-        margin-top: 100px;
-        object-fit: cover;
-    }
-    .bloco{
-        align-items: flex-start;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    >div{
+        align-items: center;
+        padding: 1rem;
         justify-content: flex-start;
         gap: 1rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
     }
     .invalid{
         color: tomato !important;
+    }
+    .left{
+        align-items: flex-start !important; 
+    }
+    .right{
+        align-items: flex-end !important;
+    }
+    .bloco{
+        gap: 1rem;
+        min-width: 24vw !important;        
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
     }
     span{
         font-size: 2rem;
@@ -24,22 +36,17 @@
         color: var(--cor-transparent);
     }
     input{
-        width: 90%;
+        width: 80%;
         height: 3rem;
-        border-radius: 0.5rem;
         padding: 0 1rem;
-        border: none;
-        color: white;
+        border: 1px solid var(--bg2);
         font-size: 1.2rem;    
         background-color: var(--cor-transparent);  
     }
     textarea{
         width: 90%;
         height: 10rem;
-        border-radius: 0.5rem;
-        padding: 0 1rem;
-        border: none;
-        color: white;
+        border: 1px solid var(--bg2);
         font-size: 1.2rem;
         background-color: var(--cor-transparent);  
 
@@ -52,6 +59,7 @@
     }
     button{
         align-self: center;
+        width: 10rem;
     }
     button:hover{
         background-color: white
@@ -64,8 +72,8 @@
             flex-direction: column-reverse;
         }
         .bloco{
-            align-items: flex-start  !important;
-            justify-content: flex-start !important;
+            align-items: center  !important;
+            justify-content: center !important;
         }
         img{
             margin:0;
