@@ -16,20 +16,19 @@ export default function Footer() {
             <h1>Onde nos encontrar</h1>
 
             <Container>
-
                     <div className="box">
                       <Container>
                           <img src="/wpp.png" alt="logo"/>
                             <div className="info-box">
                               <h2>WhatsApp</h2>
-                              <a>+55 11 9988-7766</a>
+                              <a>+55 (11) 94299-2691</a>
                             </div>
                       </Container>
                       <Container>
                           <img src="/email.png" alt="logo"/>
                           <div className="info-box">
                               <h2>Email</h2>
-                              <a>lorem@gmail.com</a>
+                              <a>lucaszanni.berzan@outlook.com</a>
                             </div>
                       </Container>
                       <Container>
