@@ -13,7 +13,7 @@
   display: inline flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 
   img{
@@ -37,3 +37,9 @@
 
 }
 
+@media (max-width: 520px) {
+  #navbar{
+    gap: 5px;
+    
+  }
+}

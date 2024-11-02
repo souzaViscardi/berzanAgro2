@@ -92,7 +92,7 @@ export default function Home(){
                     <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
                 </Bloc>
             </Container>
-            <Container classe="imgContainer">
+            <Container>
                 <h1>Localização</h1>           
             </Container>
             <Container classe="full-container">

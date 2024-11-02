@@ -2,7 +2,7 @@
     overflow: hidden;
     video{
         height: 35rem;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
     }
     .text{
@@ -90,6 +90,7 @@ h1.title {
 }
 .contactimg{
     padding: 1rem;
+    height: 30.5rem;
 }
 #slogan{
     margin-top: 5rem;
@@ -199,12 +200,56 @@ img {
     #mosaic{
         width: 100%;
     }
+    #home{
+        .titleOverflow{
+            top: 25%;
+            left: 139%;
+        }
+        .text{
+            margin-top: 10px ;
+        }
+        .contactimg{
+            padding: 0;
+            height: 20rem;
+
+        }
+        #linhaProdutos{
+            flex-direction: column;
+            gap: 0;
+            width: 100vw;
+            .card{
+                margin-bottom: 0;
+                width: 100vw !important;
+                height: 8rem;
+                margin: 0;
+            }
+            .text-box{
+                transform: translate(199%, 65%);
+            }
+            .text-box-center{
+                transform: translate(134%, 65%) !important;
+            }
+            .icon {
+                width: 3rem !important;
+            }
+            img{
+                width: 100vw;
+                height: 8rem;
+            }
+            .centerImg{ 
+                width: 100vw;
+                height: 8rem;
+            }
+        }
+    }
+
   }
 
   @media (min-width: 600px) and (max-width: 900px) {
     .title span{
         font-size: 5rem;
     }
+
     h1.title {
         margin-bottom: 0;
         margin-top: 2rem;

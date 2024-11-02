@@ -21,7 +21,7 @@ const Mapa = () => {
       return null;
     };
     return (
-      <MapContainer  style={{ height: '400px', width: '100%' }}>
+      <MapContainer  style={{ height: '300px', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
         <Marker position={center}>
