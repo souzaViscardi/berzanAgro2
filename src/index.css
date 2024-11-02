@@ -2,6 +2,9 @@
 
 #root {
   font-family: "Poppins" , sans-serif;
+  *{
+    /* border: solid 1px red; */
+  }
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;

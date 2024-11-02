@@ -75,3 +75,26 @@
             margin-bottom: 2rem;
       }
 }
+
+@media (max-width: 520px) {
+    #Produtos{
+      margin-top: 6rem;
+      .product-list{
+            width: 100vw;
+      }
+      .description{
+        width: 95vw !important;
+        margin-left: 10px;
+      }
+      span{
+            width: 70.5vw;
+      }
+      .item-list{
+            width: 95vw;
+            margin-left: 10px;
+      }
+        .card-product{
+            width: 100vw;
+        }
+    }
+}

@@ -203,15 +203,15 @@ img {
     #home{
         .titleOverflow{
             top: 25%;
-            left: 139%;
+            width: 95vw;
         }
         .text{
             margin-top: 10px ;
         }
         .contactimg{
             padding: 0;
-            height: 20rem;
-
+            height: 10rem;
+            object-fit: cover;
         }
         #linhaProdutos{
             flex-direction: column;
