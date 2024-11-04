@@ -18,9 +18,6 @@ body {
   width: 100%;          
   height: calc(100vh); /* Define a altura do container como a altura da viewport */
   overflow-x: hidden;   
-  transform: scale(0.8); 
-  transform-origin: top left; 
-  width: 125%; 
   overflow-x: hidden; 
 }
 .margin-top{
