@@ -5,16 +5,12 @@
         width: 100vw;
         object-fit: cover;
     }
-    .videoContainer{
-        overflow: hidden;
-        height: 35rem;
-    }
+
     .bloc-contact{
         width: 63rem;
         align-self: center;
         text-align: justify;
         height: 29rem;
-
     }
     .margin2l{
         margin-left: 2rem;  
@@ -52,26 +48,6 @@
         .centerImg{
             width: 25rem;
             height: 20rem;
-        }
-    }
-    .titleOverflow{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        top: 14em;
-        left: 18em;
-        width: 64rem;
-        font-weight: 800;
-        h1{
-            text-shadow:-7px 7px 2px rgba(0, 0, 0, 0.5); 
-            color: white !important;
-            font-size:3.75em;
-        }
-        span{
-            font-size: .8rem;
-            color: white !important;
-            font-size: 1.25em;
         }
     }
 }

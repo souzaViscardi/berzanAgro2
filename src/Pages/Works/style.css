@@ -1,3 +1,27 @@
+.aboutImgProducts{
+      width: 100vw !important;
+      object-fit: cover;
+      margin-top: 6rem;
+      height: 20rem;
+}
+.titleOverflowProducts {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      top: 12em;
+      left: 18em;
+      width: 64rem;
+      font-weight: 800;
+      h1{
+            text-shadow:-7px 7px 2px rgba(0, 0, 0, 0.5); 
+            color: white !important;
+            font-size:3.75em;
+        }
+  }
+.videoContainerProducts {
+      height: 22rem !important;
+}
 #Produtos{
       margin-top: 5rem;
       .card-product{
@@ -16,11 +40,12 @@
             align-items: center;
             justify-content: center;
       }
-      img{
+      .iconImg{
             width: 35px;
             height: 35px;
-
       }
+
+
       .item-list{
             display: flex;
             flex-direction: row;

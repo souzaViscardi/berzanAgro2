@@ -122,7 +122,30 @@ a:hover::after {
   
   width: 100%;
 }
-  
+.titleOverflow{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  top: 14em;
+  left: 18em;
+  width: 64rem;
+  font-weight: 800;
+  h1{
+      text-shadow:-7px 7px 2px rgba(0, 0, 0, 0.5); 
+      color: white !important;
+      font-size:3.75em;
+  }
+  span{
+      font-size: .8rem;
+      color: white !important;
+      font-size: 1.25em;
+  }
+}
+.videoContainer{
+  overflow: hidden;
+  height: 35rem;
+}
 p{
   font-size: 16px;
   font-weight: 400;
