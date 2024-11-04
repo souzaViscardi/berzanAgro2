@@ -54,7 +54,7 @@ export default function Home(){
                     <img src="/Home/Foto_Sobre_1.jpg" alt="about"/>
                 </Bloc>
                 <Bloc className="marginRigth">  
-                    <div className="text">
+                    <div className="text margin2l">
                         <h2>Berzan Agro</h2>
 
                         <p>	Nossa missão é fornecer soluções inovadoras e de alta qualidade para o setor agro, 
@@ -74,7 +74,7 @@ export default function Home(){
             </Container>
             <Container>
                 <Bloc className="marginLeft">  
-                    <div className="text">
+                    <div className="text margin2r">
                         <p>
                             Além disso, valorizamos práticas sustentáveis, que respeitam o meio ambiente e contribuem 
                             para um futuro mais verde. Todos os nossos processos são pensados para minimizar impactos 

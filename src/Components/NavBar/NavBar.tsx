@@ -17,7 +17,7 @@ export default function NavBar({contactRef,aboutRef}:Props){
         <>
         <ul id="navbar">
             <div className="containerNav">
-                <img className="logo" src="/logo.png" alt="logo"/>
+                <img className="logo" src="/Berzanbranco.png" alt="logo"/>
                 <div className="blocoNav">
                     <li><a href="/">Home</a></li>
                     {aboutRef && <li><a onClick={() => scrollToDiv(aboutRef)}>Sobre</a></li>}
