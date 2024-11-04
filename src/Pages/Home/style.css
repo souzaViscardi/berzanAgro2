@@ -5,6 +5,9 @@
         width: 100vw;
         object-fit: cover;
     }
+    .mobile{
+        display: none;
+    }
 
     .bloc-contact{
         width: 63rem;
@@ -116,6 +119,7 @@ img {
     flex-shrink: 0;
     overflow: hidden;
     height: 27rem;
+    object-fit: cover;
     width: 50vw;
 }
 .animationImgContainer{
@@ -203,18 +207,28 @@ img {
         margin-bottom: 1rem;
     }
     #mosaic{
-        width: 100%;
+        width: 100vw
     }
     #home{
         img{
-            height: 27rem;
-            width: 50vw;
+            height: 10rem;
+            width: 100vw;
+            object-fit: cover;
+        }
+        .mobile{
+            display: flex;
+        }
+        .about2{
+            display: none;
         }
         .margin2l{
             margin-left: 0 !important;  
         }   
         .margin2r{
             margin-right: 0 !important;
+        }
+        .bloc-contact{
+            height: 10rem;
         }
         .titleOverflow{
             top: 14em;

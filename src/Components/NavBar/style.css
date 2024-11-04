@@ -55,6 +55,7 @@
     flex-direction: column;
     text-align: left;
     align-self: center;
+    object-fit: contain;
   }
 }
 

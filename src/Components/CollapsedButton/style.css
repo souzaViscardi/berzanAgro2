@@ -1,26 +1,28 @@
 #CollapsedButton {
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 100%;
     text-align: justify;
     img{
       width: 35px;
       height: 35px;
+    }
+    h3{
+      color: white;
+      background-color: var(--title);
+      margin-left: 1rem;
+
     }
     button {
         color: white;
         text-align: start;
         padding: 1rem;
         font-weight: 600;
-        border: solid rgba(255, 255, 255, 0.258) 1px;
         background-color: rgb(10, 10, 10);
-
     }
 
     .description {
         display: flex;
-        width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.111);
         border-top: none;
         height: 0px;
         overflow: hidden;
@@ -29,9 +31,10 @@
     span {
         color: var(--text);
         display: flex;
-        text-align: start;
-        width: 36.5vw;
-        border-left: 1px solid rgba(0, 0, 0, 0.111);
+        margin-left: 4rem;
+        width: 39.9rem;
+        background-color: rgba(0, 0, 0, 0.111);
+        padding: 10px;
     }
 
     .show {

@@ -73,6 +73,9 @@ export default function Home(){
                 </Bloc>
             </Container>
             <Container>
+                <Bloc className="mobile">
+                    <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
+                </Bloc>
                 <Bloc className="marginLeft">  
                     <div className="text margin2r">
                         <p>
@@ -90,7 +93,7 @@ export default function Home(){
                     </div>
                 </Bloc>
                 <Bloc>
-                    <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
+                    <img className="about2" src="/Home/Foto_Sobre_2.jpg" alt="about"/>
                 </Bloc>
             </Container>
             <Container classe="orange">
