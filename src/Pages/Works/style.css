@@ -60,12 +60,15 @@
             text-align: center;
             justify-content: space-between;
             text-align: center;
-            width: 47vw;
- 
+            
+            width: 100%; 
       }
       .product-list{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
             gap: 1rem;
       }
       a::after {
