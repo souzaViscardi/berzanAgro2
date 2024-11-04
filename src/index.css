@@ -87,15 +87,17 @@ html {
   text-align: center;
   max-width: 100vw;
 }
-
-.logo{
-  width: 6rem;
-  z-index: 3;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  transform: translate(-550%, 70%); 
-  text-align: left;
+.margin{
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
+}
+.marginRigth{
+  margin-right: 18.75em !important;
+  align-self: center;
+}
+.marginLeft{
+  margin-left: 18.75em !important;
+  align-self: center;
 }
 
 a {

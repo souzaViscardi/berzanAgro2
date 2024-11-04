@@ -15,12 +15,17 @@ export default function NavBar({contactRef,aboutRef}:Props){
       };
     return(
         <>
-        <img className="logo" src="/logo.png" alt="logo"/>
         <ul id="navbar">
-            <li><a href="/">Home</a></li>
-            {aboutRef && <li><a onClick={() => scrollToDiv(aboutRef)}>Sobre</a></li>}
-           {contactRef && <li><a onClick={() => scrollToDiv(contactRef)}>Contato</a></li>}
-           <li><a href="/Produtos">Produtos</a></li>
+            <div className="containerNav">
+                <img className="logo" src="/logo.png" alt="logo"/>
+                <div className="blocoNav">
+                    <li><a href="/">Home</a></li>
+                    {aboutRef && <li><a onClick={() => scrollToDiv(aboutRef)}>Sobre</a></li>}
+                    {contactRef && <li><a onClick={() => scrollToDiv(contactRef)}>Contato</a></li>}
+                    <li><a href="/Produtos">Produtos</a></li>
+                </div>
+            </div>
+
 
         </ul>
     </>

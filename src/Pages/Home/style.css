@@ -5,11 +5,18 @@
         width: 100vw;
         object-fit: cover;
     }
+    .videoContainer{
+        overflow: hidden;
+        height: 30em;
+    }
     .text{
-        width: 80%;
+        width: 95%;
         align-self: center;
-        margin-top: 20%;
-        text-align: left;
+        text-align: justify;
+        h2{
+            display: flex;
+            align-self: flex-start;
+        }
     }
     h2{
         margin: 0;
@@ -22,38 +29,40 @@
         gap: 40px;
         align-items: center;
         justify-content: center;
-        padding-top: 20px;
-
-        padding-bottom: 20px;
+        width: 61%;
         img{
             width: 22rem;
-            height: 22rem;
+            height: 17rem;
             object-fit: cover;
             box-shadow: -3px 4px 2px rgba(0, 0, 0, 0.411); 
         }
         .centerImg{
             width: 25rem;
-            height: 25rem;
+            height: 20rem;
         }
     }
     .titleOverflow{
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
         text-align: left;
+        top: 14em;
+        left: 18em;
         width: 64rem;
+        font-weight: 800;
         h1{
-            text-shadow:-7px 7px 2px rgba(0, 0, 0, 0.7); 
+            text-shadow:-7px 7px 2px rgba(0, 0, 0, 0.5); 
+            color: white !important;
+
         }
         span{
             font-size: .8rem;
-            color: var(--title);
+            color: white !important;
+
         }
     }
 }
+
 .title span{
     color: white !important;   
     font-size: 10rem;
@@ -62,9 +71,9 @@ h1.title {
     margin-bottom: 0;
     margin-top: 0;
 }
+
 .left{
     align-self: flex-start !important;
-    margin: 0 !important;
     text-align: justify;
 }
 .gradient-collor{
@@ -89,8 +98,7 @@ h1.title {
     color: rgba(255, 255, 255, 0.7);
 }
 .contactimg{
-    padding: 1rem;
-    height: 30.5rem;
+    height: 30.3rem;
 }
 #slogan{
     margin-top: 5rem;
@@ -117,7 +125,9 @@ h1.title {
 
 img {
     flex-shrink: 0;
-    overflow: hidden
+    overflow: hidden;
+    height: 25rem;
+
 }
 .animationImgContainer{
     width: 100%;
@@ -126,6 +136,12 @@ img {
     justify-content: center;
     align-items: center;
     overflow: hidden
+}
+.orange{
+    background-color: var(--title);
+    h1{
+        color: white !important;
+    }
 }
 .imgContainer{
     width: 100%;

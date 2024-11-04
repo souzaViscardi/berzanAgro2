@@ -17,18 +17,19 @@ export default function Home(){
         <div id="home" className="full-container">
             <ScrollRestoration />
             <Container classe="imgContainer">
-            <div className="titleOverflow">
-                <h1>Soluções de</h1>
-                <h1>Alta Performance</h1>
-                <span>Potencialize sua Produção com Produtos de Qualidade</span>
-            </div>
-
-                <video autoPlay className="aboutImg" src={"Home/video_home.mp4"}  loop={true} muted={true}></video>            
+                <div className="videoContainer">
+                <div className="titleOverflow">
+                    <h1>Soluções de</h1>
+                    <h1>Alta Performance</h1>
+                    <span>Potencialize sua Produção com Produtos de Qualidade</span>
+                </div>
+                 <video autoPlay className="aboutImg" src={"Home/video_home.mp4"}  loop={true} muted={true}></video>            
+                </div>
             </Container>
-            <Container classe="secondary">
-                    <h1 className="left"> Nossas Linhas de Produtos</h1>
+            <Container>
+                    <h1 className="left margin"> Nossas Linhas de Produtos</h1>
             </Container>
-            <Container classe="secondary">    
+            <Container classe="marginRigth marginLeft">    
                 <div id="linhaProdutos">
                     <Card name="Pecuária" url="/produtos?idProduct=pecuaria" icon="/Home/iconPecuaria.png">
                         <img className="aboutImg img-card" src="/Home/pecuaria.jpg" alt="about"/>
@@ -41,9 +42,9 @@ export default function Home(){
                     </Card>
                 </div>
             </Container>
-            <Container>
+            <Container classe="orange">
                 <br/>
-                <h1 className="title">    
+                <h1 className="title margin">    
                     Sobre a Nossa Empresa
                 </h1>
                 <br/>
@@ -52,7 +53,7 @@ export default function Home(){
                 <Bloc>
                     <img src="/Home/Foto_Sobre_1.jpg" alt="about"/>
                 </Bloc>
-                <Bloc>  
+                <Bloc className="marginRigth">  
                     <div className="text">
                         <h2>Berzan Agro</h2>
 
@@ -72,7 +73,7 @@ export default function Home(){
                 </Bloc>
             </Container>
             <Container>
-                <Bloc>  
+                <Bloc className="marginLeft">  
                     <div className="text">
                         <p>
                             Além disso, valorizamos práticas sustentáveis, que respeitam o meio ambiente e contribuem 
@@ -92,8 +93,8 @@ export default function Home(){
                     <img src="/Home/Foto_Sobre_2.jpg" alt="about"/>
                 </Bloc>
             </Container>
-            <Container>
-                <h1>Localização</h1>           
+            <Container classe="orange">
+                <h1 className="margin">Localização</h1>           
             </Container>
             <Container classe="full-container">
             <Mapa></Mapa>
@@ -101,7 +102,7 @@ export default function Home(){
             <br></br>
             <br></br>
             <Container classe="full-container" scrollref={contactRef}>
-                <h1>Entre em contato conosco</h1>
+                <h1 className="margin">Entre em contato conosco</h1>
             </Container>
             <Container classe="full-container">
                 <Bloc>
