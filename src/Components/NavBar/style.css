@@ -13,7 +13,7 @@
   display: inline flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   z-index: 1200;
 
   .containerNav{
@@ -21,7 +21,7 @@
     flex-direction: row;
     margin-left: 18em;
     margin-right: 18em;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
   }
   .blocoNav{

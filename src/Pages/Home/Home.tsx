@@ -105,7 +105,7 @@ export default function Home(){
                 <h1 className="margin">Entre em contato conosco</h1>
             </Container>
             <Container classe="full-container">
-                <Bloc>
+                <Bloc className="bloc-contact">
                     <img className="contactimg" src="/Home/foto_Contato.jpg" alt="about"/>
                 </Bloc>
                 <Contact></Contact>

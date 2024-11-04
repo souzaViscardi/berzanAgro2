@@ -1,8 +1,7 @@
 #Contact{
     background-color: var(--color-primary);
     color: var(--color-white);
-    width: 50vw;
-    margin-right: 3em;
+    width: 70vw;
 
     >div{
         align-items: center;
