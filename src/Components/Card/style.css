@@ -41,11 +41,11 @@ h3{
     align-items: center;
     position: absolute;
     z-index: 3;
-    transform: translate(10%, 300%); 
+    transform: translate(3rem, 12rem);
     color: white !important;
 }
 .text-box-center {
-    transform: translate(10%, 363%) !important
+    transform: translate(3rem, 15rem);
 }
 .text-box p {
     padding-left: 2rem;

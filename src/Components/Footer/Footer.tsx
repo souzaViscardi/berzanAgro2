@@ -11,9 +11,9 @@ export default function Footer() {
     <>
         <div id="Footer">
             <div className="location">
-                <div><a onClick={handleScrollToTop}>VOLTAR AO TOPO</a></div>
+                <div><a className="margin" onClick={handleScrollToTop}>VOLTAR AO TOPO</a></div>
             </div>
-            <h1>Onde nos encontrar</h1>
+            {/* <h1>Onde nos encontrar</h1> */}
 
             <Container>
                     <div className="box">
@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
           
             </Container>
-            <span>Berzan Produtos Agropecuários LTDA Copyrihts 2024</span>
+            <span>Berzan Produtos Agropecuários LTDA Copyrights 2024</span>
 
       
         </div>
