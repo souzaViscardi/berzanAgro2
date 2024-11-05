@@ -5,6 +5,10 @@
         width: 100vw;
         object-fit: cover;
     }
+    .videoContainer{
+        overflow: hidden;
+        height: 35rem;
+      }
     .mobile{
         display: none;
     }
@@ -215,6 +219,18 @@ img {
             width: 100vw;
             object-fit: cover;
         }
+        .videoContainer{
+            overflow: hidden;
+            height: 10rem;
+          }
+          .imgContainer{
+            height: 10rem !important;
+          }
+        video{
+            height: 10rem;
+            width: 100vw;
+            object-fit: cover;
+        }
         .mobile{
             display: flex;
         }
@@ -230,8 +246,9 @@ img {
         .bloc-contact{
             height: 10rem;
         }
+
         .titleOverflow{
-            top: 14em;
+            top: 10em;
             left: 2em;            
             width: 95vw;
         }

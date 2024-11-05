@@ -71,12 +71,9 @@
     width: 100vw;
     .containerNav{
       width: 100vw;
-      margin-left: 0; 
-      margin-right: 0;
-
     }
     .logo{
-      display: none;
+      display: none    
     }
   }
 }

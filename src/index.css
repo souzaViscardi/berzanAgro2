@@ -144,10 +144,7 @@ a:hover::after {
       font-size: 1.25em;
   }
 }
-.videoContainer{
-  overflow: hidden;
-  height: 35rem;
-}
+
 p{
   font-size: 16px;
   font-weight: 400;
