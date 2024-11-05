@@ -41,7 +41,7 @@ export default function CollapsedButton({name, imgCard, description, isFilter}:P
                 <h3>{name}</h3>
             </a>
             <div style={{ "--content-height": `${contentHeight}px` } as React.CSSProperties} className={"description"+ (!active ? "" : " show") + (collapse? " colapse" :  " ") } ref={contentRef}>
-                <span>{description}</span>
+                {description && <span>{description}</span>}
             </div>
         </div>
     )
