@@ -1,4 +1,5 @@
-import "./style.css"
+import "./style.css" 
+import { Link } from "react-router-dom";
 interface Props{
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     contactRef?: any | null;
@@ -17,7 +18,9 @@ export default function NavBar({contactRef,aboutRef}:Props){
         <>
         <ul id="navbar">
             <div className="containerNav">
-                <img className="logo" src="/Berzanbranco.png" alt="logo"/>
+                <Link to="/">
+                    <img className="logo" src="/Berzanbranco.png" alt="logo"/>
+                </Link>
                 <div className="blocoNav">
                     <li><a href="/">Home</a></li>
                     {aboutRef && <li><a onClick={() => scrollToDiv(aboutRef)}>Sobre</a></li>}

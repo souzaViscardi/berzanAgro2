@@ -23,6 +23,12 @@
     margin-right: 18em;
     width: 100%;
     justify-content: space-between;
+    >a{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   .blocoNav{
     display: flex;
