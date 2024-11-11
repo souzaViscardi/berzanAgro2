@@ -1,0 +1,12 @@
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: var(--title) !important; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border-radius: 5px; /* Arredondar os cantos */
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
