@@ -1,7 +1,14 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap  } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect } from 'react';
-
+import L from "leaflet";
+const pinUrl = "/pin.png"
+const customIcon = new L.Icon({
+  iconUrl: pinUrl,
+  iconSize: [32, 32], 
+  iconAnchor: [16, 32], 
+  popupAnchor: [0, -32],
+});
 interface MyMapProps {
     center: [number, number];
     zoom: number;
@@ -24,7 +31,7 @@ const Mapa = () => {
       <MapContainer  style={{ height: '300px', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-        <Marker position={center}>
+        <Marker position={center} icon={customIcon}>
           <Popup>
             Localização aqui!
           </Popup>

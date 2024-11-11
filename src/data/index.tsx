@@ -116,13 +116,14 @@ export const fertilizantes =[
         id:1,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/1",
-
+        description:"O cloreto de potássio é uma das fontes mais comuns de potássio para fertilizantes. O potássio é um nutriente essencial para as plantas, contribuindo para o crescimento, a resistência a doenças e a qualidade dos frutos.O KCl é usado em sua forma pura ou misturado com outros nutrientes, formando fertilizantes NPK (nitrogênio, fósforo e potássio). Na agricultura, ele é particularmente útil para culturas como arroz, milho, batata, soja e vegetais de raízes."
     },
     {
         name: "Cloreto de Potássio Granulado",
         id:2,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/2",
+        description:"Forma granulada: O cloreto de potássio granulado é um sal inorgânico cristalino que é processado em grânulos para facilitar a aplicação no solo. A forma granulado melhora a distribuição uniforme do fertilizante durante a aplicação, reduzindo perdas e permitindo uma liberação controlada do potássio no solo."
 
     },
     {
@@ -130,6 +131,7 @@ export const fertilizantes =[
         id:3,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/3",
+        description:"A ureia agrícola é um dos fertilizantes nitrogenados mais utilizados na agricultura devido ao seu alto teor de nitrogênio, um dos nutrientes essenciais para o crescimento das plantas. Ela é uma fonte altamente eficiente e econômica de nitrogênio (N), que é um macronutriente fundamental para as plantas, especialmente no desenvolvimento de folhas e na fotossíntese."
 
     },
     {
@@ -137,34 +139,37 @@ export const fertilizantes =[
         id:4,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/4",
-
+        description:"O MAP (Monoamônio Fosfato) é um fertilizante amplamente utilizado na agricultura como uma fonte de fósforo e nitrogênio. Ele é um dos fertilizantes fosfatados mais comuns e tem uma aplicação significativa em várias culturas, especialmente em solos com deficiência de fósforo."
     },
     {
         name: "MKP",
         id:5,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/5",
-
+        description:"O MKP, ou Fosfato Mono Potássico (do inglês Mono Potassium Phosphate), é um fertilizante solúvel em água que fornece duas fontes importantes de nutrientes para as plantas: fósforo (P) e potássio (K). Ele é amplamente utilizado em sistemas de fertilização foliar e irrigação fertirrigada devido à sua alta solubilidade em água e à sua capacidade de fornecer esses nutrientes de forma rápida e eficiente."
     },
     {
-        name: "Sulfato de Potássio",
+        name: "Sulfato de Potássio K₂SO₄",
         id:6,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/6",
+        description:"O sulfato de potássio (K₂SO₄) é um fertilizante amplamente utilizado para fornecer potássio (K) e enxofre (S) às plantas. Ele é especialmente valioso porque oferece potássio sem adicionar cloro, o que é uma vantagem em culturas sensíveis ao cloro, como frutas, vegetais e plantas ornamentais."
 
     },
     {
-        name: "Sulfato de Amônio",
+        name: "Sulfato de Amônio (NH₄)₂SO₄",
         id:7,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/7",
+        description:"O sulfato de amônio (ou sal amônico de ácido sulfúrico, com a fórmula química (NH₄)₂SO₄) é um fertilizante amplamente utilizado para fornecer nitrogênio (N) e enxofre (S) às plantas. Ele é uma das fontes mais comuns de nitrogênio de liberação rápida e é particularmente eficaz em soloss ácidos e quando é necessário um aporte de enxofre."
 
     },
     {
-        name: "Ácido Bórico",
+        name: "Ácido Bórico H₃BO₃ ou B(OH)₃",
         id:8,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/8",
+        description:"O ácido bórico (H₃BO₃ ou B(OH)₃) é um composto químico que contém boro, um micronutriente essencial para as plantas. Embora o boro seja necessário em pequenas quantidades, ele desempenha papéis cruciais no desenvolvimento e na saúde das plantas. O ácido bórico é uma das formas mais comuns de aplicação de boro no solo e nas plantas, especialmente em áreas agrícolas."
 
     },
     {
@@ -172,21 +177,24 @@ export const fertilizantes =[
         id:9,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/9",
+        description:"Borax, também conhecido como tetraborato de sódio (Na₄B₄O₇·10H₂O), é um composto químico à base de boro com várias aplicações na agricultura, indústria e até mesmo na limpeza doméstica. Na agricultura, o borax é uma fonte importante de boro, um micronutriente essencial para o crescimento das plantas, que é vital para vários processos fisiológicos. O borax pode ser usado para corrigir deficiências de boro no solo e nas plantas, promovendo o desenvolvimento saudável e o aumento da produção agrícola."
 
     },
 
     {
-        name: "Sulfato de Magnésio",
+        name: "Sulfato de Magnésio MgSO₄·7H₂O",
         id:10,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/10",
+        description:"O sulfato de magnésio (fórmula química: MgSO₄·7H₂O) é um composto químico que contém magnésio, enxofre e água. Ele é amplamente utilizado como fertilizante e suplemento mineral, especialmente na agricultura, devido à sua capacidade de fornecer magnésio e enxofre de maneira eficaz às plantas."
 
     },
     {
-        name: "Sulfato de Molibdenio",
+        name: "Sulfato de Molibdenio  (NH₄)₆Mo₇O₂₄·4H₂O",
         id:11,
         imgCard: "/Home/iconFertilizantes.png",
         path:"fertilizantes/11",
+        description:"O sulfato de molibdênio (fórmula química: (NH₄)₆Mo₇O₂₄·4H₂O) é um fertilizante mineral utilizado principalmente como fonte de molibdênio (Mo), um micronutriente essencial para as plantas. O molibdênio desempenha papéis cruciais no metabolismo das plantas, especialmente no ciclo do nitrogênio e na formação de certas enzimas vitais para o crescimento das plantas."
 
     },
 ]
